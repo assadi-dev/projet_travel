@@ -1,3 +1,3 @@
 # Projet formation
 
-liens du projet [link](https://assadi-dev.github.io/projet_travel/)
+[Aperçu du projet](https://assadi-dev.github.io/projet_travel/)
