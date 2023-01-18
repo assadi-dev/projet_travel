@@ -112,6 +112,9 @@ section .subtitle {
 #good-offers .media-display {
     display: grid;
     grid-template-areas: "a b c" "a d e";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
 }
 
 #good-offers .media-display li:first-of-type {
