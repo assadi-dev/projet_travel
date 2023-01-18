@@ -107,6 +107,20 @@ section .subtitle {
 /* Section */
 
 
+/* Explore nature */
+
+#explor-nature .media-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    grid-gap: 15px;
+}
+
+#explor-nature .media-display img {
+    width: 100%;
+}
+
+
 /* Get the best offers first */
 
 #get-best-offert {
@@ -140,6 +154,9 @@ section .subtitle {
 #get-best-offert .section-title {
     margin-bottom: 16px;
 }
+
+
+/* Contact */
 
 #contact .material-symbols-rounded {
     margin-right: 1rem;

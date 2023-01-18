@@ -11,7 +11,8 @@ main,
 section,
 textarea,
 ul,
-ol {
+ol,
+figure {
     margin: 0;
     padding: 0;
 }
