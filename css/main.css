@@ -129,6 +129,41 @@ section .subtitle {
     font-size: 1.2rem;
 }
 
+#contact .material-symbols-rounded {
+    margin-right: 1rem;
+}
+
+#contact li {
+    font-size: 1.4rem;
+}
+
+#contact .section-title,
+#contact p {
+    margin-bottom: 1rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+#contact input,
+#contact textarea {
+    margin-bottom: 16px;
+    font-size: 1.6rem;
+}
+
+#contact button[type=submit] {
+    background-color: var(--default-color);
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #fff;
+    padding: 18px 22px;
+    font-size: 1.2rem;
+}
+
 
 /* Footer */
 
@@ -168,7 +203,8 @@ footer li:not(:last-of-type) {
 @media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 992px) {
-    #get-best-offert button[type=submit] {
+    #get-best-offert button[type=submit],
+    #contact button[type=submit] {
         width: 200px;
     }
 }
