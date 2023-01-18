@@ -149,7 +149,7 @@ section .subtitle {
 #good-offers .media-display {
     display: grid;
     grid-template-areas: "a b c" "a d e";
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
     grid-template-rows: auto;
     grid-gap: 10px;
 }
@@ -172,6 +172,44 @@ section .subtitle {
 
 #good-offers .media-display li:nth-of-type(5) {
     grid-area: e;
+}
+
+#good-offers li {
+    position: relative;
+}
+
+#good-offers figcaption {
+    position: absolute;
+    background-color: var(--default-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    visibility: hidden;
+    color: #fff;
+    transition: all 0.35s;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+
+#good-offers li:hover figcaption {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
 }
 
 
