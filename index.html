@@ -6,188 +6,206 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet Travel</title>
+    <!--Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+    <!-- Import Css -->
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./asset/font/raleway/raleway-font.css">
 </head>
 
 <body>
-    <div id="container">
-        <header id="header-hero" role="banner">
-            <nav id="navbar-container" role="menubar" aria-label="Barre de navigation haut">
-                <h1 aria-label="Logo Travel the World"> <img src="" alt="logo travel the world"> Travel the world</h1>
-            </nav>
-            <div id="banier-img" role="img" aria-label="Image de presentation en arriere plans" alt="image-ville">
-                <div id="searchdate-tab-selectors" role="banner" aria-label="Bannier de réservation">
-                    <ul id="tab-list" aria-label="Selection option de reservation" role="menu">
-                        <li class="tab-list-item selcted" role="menuitem" aria-label="Flight">Flight</li>
-                        <li class="tab-list-item" role="menuitem" aria-label="FHotel">Hotel</li>
-                        <li class="tab-list-item" role="menuitem" aria-label="Rental">Rental</li>
-                    </ul>
-                    <div id="searchdate-tab-content">
-                        <div id="content-flight" class="visible" aria-label="Formulaire de reservation flight">
-                            <form>
-                                <h2>Travel the world with us</h2>
-                                <div class="form-row-input">
-                                    <div class="header-searchdate-form">
-                                        <label for="from" aria-label="Texte Date de depart">From</label>
-                                        <input id="from" type="date" aria-label="champs type date date de reservation" name="from" />
-                                    </div>
-                                    <div class="header-searchdate-form">
-                                        <label for="to" aria-label="Texte Date d'arrivé">To</label>
-                                        <input id="to" type="date" aria-label="champs type date Date d'arrivé" name="to" />
-                                    </div>
 
-                                    <button type="submit">Search and find dates</button>
+    <header id="header-hero" role="banner">
+        <nav id="navbar-container" role="menubar" aria-label="Barre de navigation haut">
+            <h1 aria-label="Logo Travel the World"> <span class="material-symbols-rounded">
+                    location_on
+                    </span> Travel the world</h1>
+        </nav>
+        <div id="banier-img" role="img" aria-label="Image de presentation en arriere plans" alt="image-ville">
+            <div id="searchdate-tab-selectors" role="banner" aria-label="Bannier de réservation">
+                <ul id="tab-list" aria-label="Selection option de reservation" role="menu">
+                    <li class="tab-list-item selected" role="menuitem" aria-label="Flight"> <span class="material-symbols-rounded">
+                            flight
+                            </span> Flight</li>
+                    <li class="tab-list-item" role="menuitem" aria-label="FHotel"><span class="material-symbols-rounded">
+                            hotel
+                            </span> Hotel</li>
+                    <li class="tab-list-item" role="menuitem" aria-label="Rental"><span class="material-symbols-rounded">
+                            car_rental
+                            </span> Rental</li>
+                </ul>
+                <div id="searchdate-tab-content">
+                    <div id="content-flight" class="visible" aria-label="Formulaire de reservation flight">
+                        <form>
+                            <h2>Travel the world with us</h2>
+                            <div class="form-row-input">
+                                <div class="header-searchdate-form">
+                                    <label for="from" aria-label="Texte Date de depart">From</label>
+                                    <input id="from" type="date" aria-label="champs type date date de reservation" name="from" />
+                                </div>
+                                <div class="header-searchdate-form">
+                                    <label for="to" aria-label="Texte Date d'arrivé">To</label>
+                                    <input id="to" type="date" aria-label="champs type date Date d'arrivé" name="to" />
                                 </div>
 
-                            </form>
+                                <button type="submit">Search and find dates</button>
+                            </div>
 
-                        </div>
+                        </form>
 
                     </div>
+
                 </div>
             </div>
-        </header>
-        <main>
-            <section id="good-offers" role="article" aria-label="Section des promotions">
-                <h2 class="section-title" aria-label="Section Good Offers Right Now">Good Offers Right Now</h2>
-                <p class="subtitle">Up to 50% Discount</p>
+        </div>
+    </header>
+    <main>
+        <section id="good-offers" role="article" aria-label="Section des promotions">
+            <h2 class="section-title" aria-label="Section Good Offers Right Now">Good Offers Right Now</h2>
+            <p class="subtitle">Up to 50% Discount</p>
 
-                <ul class="media-display">
-                    <li>
-                        <figure>
-                            <img src="./asset/img/cinqueterre.jpg" alt="cinqueterre">
-                            <figcaption>
-                                cinqueterre
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="./asset/img/newyork2.jpg" alt="new-york">
-                            <figcaption>
-                                New York
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="./asset/img/sanfran.jpg" alt="sanfran">
-                            <figcaption>
-                                Sanfran
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="./asset/img/pisa.jpg" alt="pisa">
-                            <figcaption>
-                                Pisa
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="./asset/img/paris.jpg" alt="paris">
-                            <figcaption>
-                                Paris
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-
-
-
-
-            </section>
-            <section id="explor-nature" role="article" aria-label="Section des offres dans la categorie nature">
-                <h2 class="section-title" aria-label="Section Good Offers Right Now">Explore Nature</h2>
-                <p class="subtitle">Travel with us and see nature at its finest.</p>
-                <ul class="media-display">
-                    <li>
-                        <figure>
-                            <img src="./asset/img/mountains2.jpg" alt="mountains-austria">
-                            <figcaption>
-                                <h3> Mountains,Austria</h3>
-                                <p>One-way from $39</p>
-                                <p>Praesent tincidunt sed tellus ut rutum sed vitae justo.</p>
-                                <button type="button">Buy tickets</button>
-                            </figcaption>
-                        </figure>
-
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="./asset/img/newyork2.jpg" alt="west-coast-norway">
-                            <figcaption>
-                                <h3> West Coasts,Norway</h3>
-                                <p>Roundtrip from $39</p>
-                                <p>Praesent tincidunt sed tellus ut rutum sed vitae justo.</p>
-                                <button type="button">Buy tickets</button>
-                            </figcaption>
-                        </figure>
-
-                    </li>
-                </ul>
-
-
-            </section>
-            <section id="get-best-offert" role="article" aria-label="Section newsletter des bons plans reservation">
-                <h2>Get the best offers first !</h2>
-                <p>Join our newsletter</p>
-                <form>
-                    <label for="email-get-news">Email</label>
-                    <input id="email-get-news" type="email" name="email-get-news">
-                    <button type="submit">Subscribe</button>
-                </form>
-            </section>
-            <section id="contact" role="article" aria-label="Section contact">
-                <h2>Contact</h2>
-                <p>Let us book your next trip!</p>
-                <ul>
-                    <li>
-                        <a href="#"><img src="" alt=""> Chicago,US</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="" alt=""> Phone +00 151515</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="" alt=""> Email contact@gmail.com</a>
-                    </li>
-                </ul>
-                <form>
-                    <input type="text" name="firstname" placeholder="First name">
-                    <input type="email" name="email" placeholder="E-mail">
-                    <textarea name="your-message" placeholder="Your message..."></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-
-            </section>
-        </main>
-        <footer>
-
-            <p>Find Us On</p>
-            <ul>
+            <ul class="media-display">
                 <li>
-                    <a href="" class="socialNetwork-icon"> <img src="./asset/icon/facebook.svg" alt="facebook-icon"> </a>
+                    <figure>
+                        <img src="./asset/img/cinqueterre.jpg" alt="cinqueterre">
+                        <figcaption>
+                            cinqueterre
+                        </figcaption>
+                    </figure>
                 </li>
                 <li>
-                    <a href="" class="socialNetwork-icon"><img src="./asset/icon/instagram.svg" alt="instagram-icon"></a>
+                    <figure>
+                        <img src="./asset/img/newyork2.jpg" alt="new-york">
+                        <figcaption>
+                            New York
+                        </figcaption>
+                    </figure>
                 </li>
                 <li>
-                    <a href="" class="socialNetwork-icon"> <img src="./asset/icon/linkedin.svg" alt="linkedin-icon"></a>
+                    <figure>
+                        <img src="./asset/img/sanfran.jpg" alt="sanfran">
+                        <figcaption>
+                            Sanfran
+                        </figcaption>
+                    </figure>
                 </li>
                 <li>
-                    <a href="" class="socialNetwork-icon"> <img src="./asset/icon/twitter.svg" alt="ltwitter-icon"></a>
+                    <figure>
+                        <img src="./asset/img/pisa.jpg" alt="pisa">
+                        <figcaption>
+                            Pisa
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./asset/img/paris.jpg" alt="paris">
+                        <figcaption>
+                            Paris
+                        </figcaption>
+                    </figure>
                 </li>
             </ul>
-            <p>&copy; Powered by Giusmli - 2021</p>
-        </footer>
-    </div>
 
 
-    </div>
+
+
+        </section>
+        <section id="explor-nature" role="article" aria-label="Section des offres dans la categorie nature">
+            <h2 class="section-title" aria-label="Section Good Offers Right Now">Explore Nature</h2>
+            <p class="subtitle">Travel with us and see nature at its finest.</p>
+            <ul class="media-display">
+                <li>
+                    <figure>
+                        <img src="./asset/img/mountains2.jpg" alt="mountains-austria">
+                        <figcaption>
+                            <h3> Mountains,Austria</h3>
+                            <p>One-way from $39</p>
+                            <p>Praesent tincidunt sed tellus ut rutum sed vitae justo.</p>
+                            <button type="button">Buy tickets</button>
+                        </figcaption>
+                    </figure>
+
+                </li>
+                <li>
+                    <figure>
+                        <img src="./asset/img/newyork2.jpg" alt="west-coast-norway">
+                        <figcaption>
+                            <h3> West Coasts,Norway</h3>
+                            <p>Roundtrip from $39</p>
+                            <p>Praesent tincidunt sed tellus ut rutum sed vitae justo.</p>
+                            <button type="button">Buy tickets</button>
+                        </figcaption>
+                    </figure>
+
+                </li>
+            </ul>
+
+
+        </section>
+        <section id="get-best-offert" role="article" aria-label="Section newsletter des bons plans reservation">
+            <h2 class="section-title">Get the best offers first !</h2>
+            <p>Join our newsletter</p>
+            <form>
+                <label for="email-get-news">Email</label>
+                <input id="email-get-news" type="email" name="email-get-news">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section id="contact" role="article" aria-label="Section contact">
+            <h2>Contact</h2>
+            <p>Let us book your next trip!</p>
+            <ul>
+                <li>
+                    <a href="#"><span class="material-symbols-rounded">
+                            location_on
+                            </span> Chicago,US</a>
+                </li>
+                <li>
+                    <a href="#"><span class="material-symbols-rounded">
+                            call
+                            </span> Phone +00 151515</a>
+                </li>
+                <li>
+                    <a href="#"><span class="material-symbols-rounded">
+                            mail
+                            </span>Email contact@gmail.com</a>
+                </li>
+            </ul>
+            <form>
+                <input type="text" name="firstname" placeholder="First name">
+                <input type="email" name="email" placeholder="E-mail">
+                <textarea name="your-message" placeholder="Your message..."></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+
+        <p>Find Us On</p>
+        <ul>
+            <li>
+                <a href="" class="socialNetwork-icon"> <img src="./asset/icon/facebook.svg" alt="facebook-icon"> </a>
+            </li>
+            <li>
+                <a href="" class="socialNetwork-icon"><img src="./asset/icon/instagram.svg" alt="instagram-icon"></a>
+            </li>
+            <li>
+                <a href="" class="socialNetwork-icon"> <img src="./asset/icon/linkedin.svg" alt="linkedin-icon"></a>
+            </li>
+            <li>
+                <a href="" class="socialNetwork-icon"> <img src="./asset/icon/twitter.svg" alt="ltwitter-icon"></a>
+            </li>
+        </ul>
+        <p>&copy; Powered by Giusmli - 2021</p>
+    </footer>
+
+
+
     <script src="./js/main.js"></script>
 </body>
 
