@@ -1,0 +1,150 @@
+/* header */
+
+
+/* Banner */
+
+#banier-img {
+    display: none;
+    background-image: url("/asset/img/london2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Navbar */
+
+#navbar-container {
+    background-color: #fff;
+    color: var(--red-color);
+    height: fit-content;
+    padding: 10px 35px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar-container>h1 {
+    font-size: 2.8rem;
+    font-weight: normal;
+}
+
+#navbar-container>h1>span {
+    font-size: 2.2rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+/* Search Date Tabs */
+
+#searchdate-tab-selectors {
+    width: fit-content;
+}
+
+#searchdate-tab-selectors #tab-list {
+    display: flex;
+    color: #fff;
+    list-style-type: none;
+    background-color: var(--default-color);
+    align-items: center;
+    justify-content: center;
+}
+
+#searchdate-tab-selectors .tab-list-item:not(:last-of-type) {
+    margin-right: 25px;
+}
+
+#searchdate-tab-selectors .tab-list-item span {
+    display: inline-flex;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+#searchdate-tab-selectors .tab-list-item {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#searchdate-tab-content {
+    background-color: var(--bg-color);
+    padding: 12px;
+}
+
+#searchdate-tab-selectors .selected {
+    background-color: var(--red-color);
+}
+
+
+/* Body */
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Raleway', sans-serif;
+    color: var(--default-color);
+}
+
+section {
+    margin-top: 32px;
+    margin-right: 32px;
+    padding: 18px;
+}
+
+section .section-title {
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
+section .subtitle {
+    font-size: 1.2rem;
+}
+
+
+/* Section */
+
+
+/* Get the best offers first */
+
+#get-best-offert {
+    background-color: var(--default-color);
+    color: #fff;
+}
+
+#get-best-offert form {
+    display: flex;
+    flex-direction: column;
+}
+
+#get-best-offert button[type=submit] {
+    background-color: var(--red-color);
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #fff;
+    padding: 18px 22px;
+    font-size: 1.2rem;
+}
+
+
+/* media screen */
+
+@media screen and (min-width: 550px) {
+    #banier-img {
+        display: grid;
+        height: 550px;
+        width: 100%;
+        place-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {
+    #get-best-offert button[type=submit] {
+        width: 200px;
+    }
+}
