@@ -107,6 +107,34 @@ section .subtitle {
 /* Section */
 
 
+/*  Good Offers Right Now */
+
+#good-offers .media-display {
+    display: grid;
+    grid-template-areas: "a b c" "a d e";
+}
+
+#good-offers .media-display li:first-of-type {
+    grid-area: a;
+}
+
+#good-offers .media-display li:nth-of-type(2) {
+    grid-area: b;
+}
+
+#good-offers .media-display li:nth-of-type(3) {
+    grid-area: c;
+}
+
+#good-offers .media-display li:nth-of-type(4) {
+    grid-area: d;
+}
+
+#good-offers .media-display li:nth-of-type(5) {
+    grid-area: e;
+}
+
+
 /* Explore nature */
 
 #explor-nature .media-display {
