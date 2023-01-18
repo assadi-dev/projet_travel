@@ -100,8 +100,13 @@
 
 .header-searchdate-input input {
     font-size: 1.6rem;
+    padding: 12px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.header-searchdate-input input:first-of-type {
+    margin-right: 15px;
 }
 
 #searchdate-tab-content button[type="submit"] {
