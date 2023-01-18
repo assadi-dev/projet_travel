@@ -15,7 +15,7 @@
 /* Navbar */
 
 #navbar-container {
-    background-color: #fff;
+    background-color: var(--bg-color);
     color: var(--red-color);
     height: fit-content;
     padding: 10px 35px;
@@ -77,6 +77,39 @@
 
 #searchdate-tab-selectors .selected {
     background-color: var(--red-color);
+}
+
+#searchdate-tab-content #content-flight h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: normal;
+}
+
+#searchdate-tab-content .form-row-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+}
+
+#searchdate-tab-content .header-searchdate-input {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+.header-searchdate-input input {
+    font-size: 1.6rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#searchdate-tab-content button[type="submit"] {
+    width: 100%;
+    background-color: var(--default-color);
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 15px 8px;
 }
 
 
