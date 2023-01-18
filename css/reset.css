@@ -11,6 +11,10 @@ ol {
     padding: 0;
 }
 
+li {
+    list-style-type: none;
+}
+
 p {
     font-size: 1.6rem;
 }
