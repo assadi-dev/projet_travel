@@ -115,8 +115,16 @@ section .subtitle {
 }
 
 #get-best-offert form {
-    display: flex;
+    display: grid;
     flex-direction: column;
+    margin-top: 16px;
+}
+
+#get-best-offert input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    padding: 12px;
 }
 
 #get-best-offert button[type=submit] {
@@ -127,6 +135,10 @@ section .subtitle {
     color: #fff;
     padding: 18px 22px;
     font-size: 1.2rem;
+}
+
+#get-best-offert .section-title {
+    margin-bottom: 16px;
 }
 
 #contact .material-symbols-rounded {
@@ -152,6 +164,7 @@ section .subtitle {
 #contact textarea {
     margin-bottom: 16px;
     font-size: 1.6rem;
+    padding: 15px;
 }
 
 #contact button[type=submit] {
