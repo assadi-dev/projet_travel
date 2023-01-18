@@ -158,10 +158,10 @@ section {
 
 #good-offers .media-display {
     display: grid;
-    grid-template-areas: "a b c" "a d e";
-    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-areas: "a a a" "b b b" "c c c" "d d d" "e e e";
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 
 #good-offers .media-display li:first-of-type {
@@ -227,7 +227,8 @@ section {
 
 #explor-nature .media-display {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     justify-content: center;
     grid-gap: 15px;
 }
@@ -373,18 +374,24 @@ footer ul {
 @media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 992px) {
-    /* #good-offers .media-display figure:first-of-type {
-        width: 486px;
-    }
-    #good-offers .media-display figure:not(:first-of-type) {
-        height: 150px;
-    }
-    #good-offers .media-display li:not(:first-of-type) {
-        height: 150px;
-    } */
     main {
         max-width: 1200px;
         margin: 12px auto;
+    }
+    /* Good Offers Right Now */
+    #good-offers .media-display {
+        display: grid;
+        grid-template-areas: "a b c" "a d e";
+        grid-template-columns: 1fr 0.5fr 0.5fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+    /* Explor Nature */
+    #explor-nature .media-display {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        grid-gap: 15px;
     }
     #searchdate-tab-content .form-row-input {
         width: 600px;
