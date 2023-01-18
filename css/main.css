@@ -149,8 +149,8 @@ section .subtitle {
 #good-offers .media-display {
     display: grid;
     grid-template-areas: "a b c" "a d e";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-gap: 10px;
 }
 
@@ -172,11 +172,6 @@ section .subtitle {
 
 #good-offers .media-display li:nth-of-type(5) {
     grid-area: e;
-}
-
-#good-offers .media-display img {
-    width: 100%;
-    height: 100%;
 }
 
 
@@ -311,9 +306,15 @@ footer ul {
 @media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 992px) {
-    #good-offers .media-display li:first-of-type {
+    /* #good-offers .media-display figure:first-of-type {
         width: 486px;
     }
+    #good-offers .media-display figure:not(:first-of-type) {
+        height: 150px;
+    }
+    #good-offers .media-display li:not(:first-of-type) {
+        height: 150px;
+    } */
     main {
         max-width: 1200px;
         margin: 12px auto;
