@@ -5,7 +5,7 @@
 
 #banier-img {
     display: none;
-    background-image: url("./asset/img/london2.jpg");
+    background-image: url("../asset/img/london2.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
