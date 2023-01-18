@@ -1,4 +1,6 @@
-/* header */
+main {
+    width: 100%;
+}
 
 
 /* Banner */
@@ -15,7 +17,7 @@
 /* Navbar */
 
 #navbar-container {
-    background-color: var(--bg-color);
+    background-color: #fff;
     color: var(--red-color);
     height: fit-content;
     padding: 10px 35px;
@@ -353,8 +355,8 @@ footer p {
 
 footer ul {
     display: grid;
-    grid-template-columns: repeat(4, 50px);
-    grid-template-rows: repeat(1, 50px);
+    grid-template-columns: repeat(4, 35px);
+    grid-template-rows: repeat(1, 35px);
     grid-gap: 10px;
     justify-content: center;
 }
