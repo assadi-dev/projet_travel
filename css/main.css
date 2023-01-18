@@ -27,12 +27,19 @@
 #navbar-container>h1 {
     font-size: 2.8rem;
     font-weight: normal;
+    display: flex;
+    align-items: center;
 }
 
 #navbar-container>h1>span {
-    font-size: 2.2rem;
     display: inline-flex;
     align-items: center;
+    background-image: url("../asset/img/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
 }
 
 
@@ -61,7 +68,7 @@
 }
 
 #searchdate-tab-selectors .tab-list-item {
-    font-size: 2rem;
+    font-size: 2.8rem;
     display: flex;
     align-items: center;
     padding: 12px;
@@ -114,7 +121,7 @@
     width: 100%;
     background-color: var(--default-color);
     color: #fff;
-    font-size: 1.6rem;
+    font-size: inherit;
     padding: 15px 8px;
 }
 
@@ -129,7 +136,6 @@ body {
 
 section {
     margin-top: 32px;
-    margin-right: 32px;
     padding: 18px;
 }
 
@@ -270,7 +276,7 @@ section {
     padding: 12px;
 }
 
-#get-best-offert button[type=submit] {
+#get-best-offert button[type="submit"] {
     background-color: var(--red-color);
     width: 100%;
     text-align: center;
@@ -380,6 +386,6 @@ footer ul {
     }
     #get-best-offert button[type=submit],
     #contact button[type=submit] {
-        width: 200px;
+        width: 250px;
     }
 }
