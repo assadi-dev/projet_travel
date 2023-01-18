@@ -133,13 +133,15 @@ section {
     padding: 18px;
 }
 
-section .section-title {
+.section-title {
     font-weight: normal;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    margin-bottom: 1.4rem;
 }
 
-section .subtitle {
-    font-size: 1.2rem;
+.subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
 }
 
 
@@ -259,10 +261,6 @@ section .subtitle {
     font-size: 1.2rem;
 }
 
-#get-best-offert .section-title {
-    margin-bottom: 16px;
-}
-
 
 /* Contact */
 
@@ -274,7 +272,6 @@ section .subtitle {
     font-size: 1.4rem;
 }
 
-#contact .section-title,
 #contact p {
     margin-bottom: 1rem;
 }
