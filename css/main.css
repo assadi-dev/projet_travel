@@ -48,7 +48,6 @@
     list-style-type: none;
     background-color: var(--default-color);
     align-items: center;
-    justify-content: center;
 }
 
 #searchdate-tab-selectors .tab-list-item:not(:last-of-type) {
