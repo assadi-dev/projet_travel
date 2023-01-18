@@ -130,6 +130,30 @@ section .subtitle {
 }
 
 
+/* Footer */
+
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    grid-gap: 1.2rem;
+}
+
+footer p {
+    align-self: center;
+}
+
+footer li {
+    display: inline;
+}
+
+footer li:not(:last-of-type) {
+    margin-right: 1rem;
+}
+
+
 /* media screen */
 
 @media screen and (min-width: 550px) {
