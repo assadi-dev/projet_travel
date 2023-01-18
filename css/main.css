@@ -230,6 +230,25 @@ section {
     width: 100%;
 }
 
+#explor-nature figcaption {
+    margin-top: 1rem;
+}
+
+#explor-nature p {
+    margin-bottom: 1.4rem;
+}
+
+#explor-nature button {
+    padding: 14px 22px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #dadada;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
 
 /* Get the best offers first */
 
