@@ -66,11 +66,12 @@ main {
 #searchdate-tab-selectors .tab-list-item span {
     display: inline-flex;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-right: 0.3rem;
 }
 
 #searchdate-tab-selectors .tab-list-item {
-    font-size: 2.8rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     padding: 12px;
