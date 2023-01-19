@@ -214,6 +214,10 @@ section {
     -o-transform: scale(0);
 }
 
+#good-offers figure {
+    height: 100%;
+}
+
 #good-offers li:hover figcaption {
     visibility: visible;
     opacity: 1;
