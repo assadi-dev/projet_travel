@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let form = document.querySelector("#content-flight form");
-  form.addEventListener("submit", (e) => {
+  let fromSearchDateFlight = document.querySelector("#content-flight form");
+  fromSearchDateFlight.addEventListener("submit", (e) => {
     e.preventDefault();
     let from = e.target.from.value;
     let to = e.target.to.value;
