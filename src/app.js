@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /**
  * Vérifie si la valeur est vide
- * @param {String} value
- * @returns
+ * @returns {Boolean} true or false
  */
 const isEmpty = (value) => {
   if (
