@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let from = e.target.from.value;
     let to = e.target.to.value;
     if (isEmpty(from)) return alert("Le champs From n'est pas renseigné");
-    if (isEmpty(to)) return "Le champs From n'est pas renseigné";
+    if (isEmpty(to)) return alert("Le champs to n'est pas renseigné");
     console.log(`From: ${from} to: ${to}`);
   });
 });
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
  * @returns
  */
 const isEmpty = value => {
-  if (value === "" || value === null || value === undefined) {
+  if (value.length === 0 || value === "" || value === null || value === undefined) {
     return true;
   }
   return false;
