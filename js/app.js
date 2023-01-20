@@ -4,9 +4,24 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     let from = e.target.from.value;
     let to = e.target.to.value;
-    if (isEmpty(from)) return alert("Le champs From n'est pas renseigné");
-    if (isEmpty(to)) return alert("Le champs to n'est pas renseigné");
-    alert(`Success! : From: ${from} to: ${to}`);
+    if (isEmpty(from)) return Swal.fire({
+      title: "Error!",
+      text: "Le champs From n'est pas renseigné",
+      icon: "error",
+      confirmButtonText: "Fermer"
+    });
+    if (isEmpty(to)) return Swal.fire({
+      title: "Error!",
+      text: "Le champs to n'est pas renseigné",
+      icon: "error",
+      confirmButtonText: "Fermer"
+    });
+    Swal.fire({
+      icon: "success",
+      title: "Success!",
+      text: "Your work has been saved",
+      confirmButtonText: "OK"
+    });
   });
 });
 
