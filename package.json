@@ -1,23 +1,27 @@
 {
-  "name": "travel_the_world",
-  "version": "1.0.0",
-  "description": "[Aperçu du projet](https://assadi-dev.github.io/projet_travel/)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/assadi-dev/projet_travel.git"
-  },
-  "author": "Assadi",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/assadi-dev/projet_travel/issues"
-  },
-  "homepage": "https://github.com/assadi-dev/projet_travel#readme",
-  "dependencies": {
-    "express": "^4.18.2",
-    "nodemon": "^2.0.20"
-  }
+    "name": "travel_the_world",
+    "version": "1.0.0",
+    "description": "[Aperçu du projet](https://assadi-dev.github.io/projet_travel/)",
+    "main": "index.js",
+    "scripts": {
+        "build": "babel --no-babelrc src -w -d js --preset=env"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/assadi-dev/projet_travel.git"
+    },
+    "author": "Assadi",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/assadi-dev/projet_travel/issues"
+    },
+    "homepage": "https://github.com/assadi-dev/projet_travel#readme",
+    "dependencies": {
+        "express": "^4.18.2",
+        "nodemon": "^2.0.20"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0"
+    }
 }
